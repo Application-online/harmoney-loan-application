@@ -1,0 +1,135 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aply.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b33e9054eb.js" crossorigin="anonymous"></script>
+    <title>Application Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('rp0INP52_hQ6gc6_U');
+        })();
+    </script>
+</head>
+<body>
+    <div id="div2" style="z-index: 3;">
+        <img src="./logo.jpg" alt="">
+        <h2 id="p4" style="color:black;">Application form</h2>
+        <!-- <i id="icon1" style="color:black;" class="fa-solid fa-bars"></i> -->
+        <!-- <i id="icon1" class="fa-sharp fa-solid fa-bars"></i> -->
+        <!-- <i id="icon2" class="fa-solid fa-magnifying-glass"></i> -->
+    </div>
+    <!-- <div id="div1">
+        <div id="img1"><img src="./WhatsApp Image 2024-05-21 at 18.29.10.jpeg" alt=""></div>
+     
+    </div>
+    <div id="div2">
+        <p id="p4">Caribbean Finance Co Ltd Loan Application Form</p>
+    </div> -->
+    <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <div id="page1">
+
+            <label for="name">Full Name:</label> <br>
+            <input type="text" name="name" id="name" placeholder="Enter First Name"> 
+            <input type="text" name="surname" id="surname" placeholder="Enter Surname"> <br>
+        
+            <!-- <label for="">Next of kin:</label><br>
+            <input type="text" class="input" name="kin" id="kin" placeholder="Enter Your Next of kin"> <br> -->
+
+            <label for="address">Address:</label><br>
+            <div id="allAddress">
+                <input type="text" class="input" name="address" id="address" placeholder="Enter Street Address"> <br>
+                <!-- <input type="text" name="street" id="address" placeholder="Enter Street Address Line 2"> -->
+                <input type="text" name="city" id="city" placeholder="Enter City">
+            </div>
+            <div id="allAddress">
+                <input type="text" name="state/province" id="state/province" placeholder="Enter State / Province"><br>
+                <input type="text" name="postal" id="postal" placeholder="Enter POstal / Zip Code"> <br>
+            </div>
+            <br>
+    
+            <label for="phone">Phone Number</label><br>
+            <input type="number" class="input" name="phone" id="phone" placeholder="Enter Phone Number"><br>
+                
+            <label for="">Employed Status:</label><br>
+            <input type="text" name="status" id="occupation" placeholder="Enter Your Occupation"> <br>
+            
+            <label for="">Date of birth:</label><br>
+            <input type="date" name="birth" id="birth" placeholder="Enter Your ID Date of birth"> <br>
+
+            <label for="">Email address:</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email address" > <br>
+                
+            <!-- <img style="width: 100%; margin-bottom: 4%;" src="./WhatsApp Image 2024-05-23 at 12.28.32.jpeg" alt=""> -->
+<!--             
+            <label for="">Your office address:</label><br>
+            <input type="text" name="office-address" id="office-address" placeholder="Enter Your Office Address"> <br> -->
+         
+            <!-- <label for="">Married/Single:</label><br>
+            <input type="text" name="married/single" id="married/single" placeholder="Are you married or single"> <br> -->
+
+<!--             
+        <label for="">Salary earner/Business owner:</label><br>
+        <input type="text" class="input" name="pick" id="pick" placeholder="Salary earner/Business owner"> <br>
+         -->
+        <!-- <img style="width: 100%; margin-bottom: 4%;" src="./WhatsApp Image 2024-05-23 at 12.31.08.jpeg" alt=""> -->
+        
+        <label for="">Loan Amount:</label><br>
+        <input type="number" name="amount" id="amount" placeholder="Enter Your Loan Amount" > <br>
+        
+        <label for="">Loan Duration:</label><br>
+        <input type="text" name="duration" id="duration" placeholder="Enter Your Loan Duration (Please be Specific)" > <br>
+        
+        <label for="">Net Salary:</label><br>
+        <input type="number" name="salary" id="salary" placeholder="Enter Your Net Salary" > <br>
+        
+        <label for="">Salary Date:</label><br>
+        <input type="number" name="sdate" id="sdate" placeholder="Enter Your Specific Salary Date" > <br>
+        
+        <label for="">Reason For Your Loan Application:</label><br>
+        <input type="text" name="reason" id="reason" placeholder="Enter The Reason For Your Loan Application" > <br>
+        
+        <label for="">Account Number:</label><br>
+        <input type="number" name="account" id="account" placeholder="Enter Your Account Number" > <br>
+
+        <p id="error-message" style="color: red; display: block; text-align: center;"></p>
+<!-- 
+        <div id="terms">
+            <input type="checkbox" name="agree" id="agree" onclick="validate()">
+            <label for="agree" >I agree to the <span id="condition" style="color: blue;"> Terms and Conditions </span></label>
+            
+        </div> -->
+        <input type="submit" value="SUBMIT" id="submit" >
+       </div>
+    </form>
+    <div id="write-up" style="display: none; margin-top: 20%;">
+        <div id="write">
+            <!-- <img src="./b14ebf87-f581-432d-82f4-c51932ca8653.jpg" alt=""> -->
+            <h3>Heading</h3>
+            <p id="failure">Unable to make to submit form <br><br> <span id="why">
+              Due to your internet connection</span> </p>
+        </div>
+    </div>
+    <div id="successful" style="display: none; width: 100vw; margin-top: 20%;">
+        <img style="width: 105vw;" src="./WhatsApp Image 2024-05-13 at 23.06.34 (1).jpeg" alt="">
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
